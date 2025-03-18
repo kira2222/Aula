@@ -4,6 +4,7 @@
 
 <h1>Task List</h1>
 
+
 <table class="table">
     <thead>
         <tr>
@@ -28,8 +29,12 @@
                
             </td>
             <td>
-                <a href="{% url 'task_update' task.id %}">Edit</a>
-                <a href="{% url 'task_delete' task.id %}">Delete</a>
+                <td>
+                    <a href="{% url 'task_update' task.id %}" class="btn btn-warning btn-sm">✏️ Edit</a>
+                    <a href="{% url 'task_delete' task.id %}" class="btn btn-danger btn-sm">🗑️ Delete</a>
+                </td>
+                
+                
             </td>
         </tr>
         {% endfor %}
