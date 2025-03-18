@@ -90,6 +90,5 @@ Accede a la aplicación en `http://127.0.0.1:8000/`.
 ## Contribución
 Si deseas contribuir, crea un fork del repositorio, realiza tus cambios en una nueva rama y envía un pull request.
 
-## Licencia
-Este proyecto está bajo la licencia [nombre de la licencia].
+
 
