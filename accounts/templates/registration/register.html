@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<h2>Register Username</h2>
+
+
+{% if form.non_field_errors %}
+    <div style="color: red;">{{ form.non_field_errors }}</div>
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    
+   
+    
+    <button  class="btn btn-primary" type="submit">Registrar</button>
+</form>
+
+{% endblock %}
